@@ -14,3 +14,12 @@ for Mac http://docs.python-guide.org/en/latest/starting/install/osx/
 
 You will also need 3 program files (enterainment_center.py, fresh_tomatoes.py,
 media.py)
+
+You can download the 3 files from my github page:
+https://github.com/mcbob98/movie
+
+To run the program open a command prompt for windows of a terminal for mac
+and navigate to where you downloaded the 3 files to. Once you at the directory
+where you downloaded the files type "python enterainment.py" the browser should
+launch with three of my favorit movies. To watch a trailer of one the movies 
+just click one of the poster images.
