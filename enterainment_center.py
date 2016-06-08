@@ -1,34 +1,33 @@
 import media
 import fresh_tomatoes
 
-toy_story = media.Movie("Toy Story", "a story of a boy and his toys that come to life",
-                        "/home/m/mcdevitt/Downloads/Toy_Story.jpg",
-                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+#An instance of the movie class containing one of my favorit movies Raw Deal
 raw_deal = media.Movie("Raw Deal",
-                       "A disgraced agent who leaps at a chance for reinstatement.",
-                       "/home/m/mcdevitt/Downloads/raw.jpg",
-                       "https://www.youtube.com/watch?v=4UUlyAn5Yq")
+                       "A disgraced agent who leaps at a chance for "
+                       "reinstatement.",
+                       "http://people.cis.ksu.edu/~mcdevitt/Movie/raw.jpg",
+                       "https://youtu.be/Sr1PSyCxb7g")
                        
                        
 
-#print(toy_story.storyline)
+#An instance of the movie class containing one of my favorit movies Avatar
 avatar = media.Movie("Avatar",
                      "A marine on an alien lpanet",
-                     "/home/m/mcdevitt/Downloads/avatar.jpeg",
+                     "http://people.cis.ksu.edu/~mcdevitt/Movie/avatar.jpeg",
                      "https://www.youtube.com/watch?v=d1_JBMrrYw8")
-#print(avatar.storyline)
-#avatar.show_trailer()
 
+"""An instance of the movie class containing one of my favorit movies
+   Star Wars Force Awakens"""
 force_awakens = media.Movie("Star Wars: The Force Awakens",
-                            "The First Order has risen from the fallen Galactic Empire and seeks to eliminate the New Republic.",
-                            "/home/m/mcdevitt/Downloads/force.jpg",
+                            "The First Order has risen from the fallen Galactic"
+                            " Empire and seeks to eliminate the New Republic.",
+                            "http://people.cis.ksu.edu/~mcdevitt/Movie/force.jpg",
                             "www.youtube.com/watch?v=Hyc84zvhbQU")
 
-#force_awakens.show_trailer()
 
+#A list of the tree instances of the movie class created above
 movies = [raw_deal, avatar, force_awakens]
 
-#fresh_tomatoes.open_movies_page(movies)
-#print(media.Movie.valid_ratings)
-print(media.Movie.__module__)
-print(media.Movie.__name__)
+"""Calling the fresh_tomatoes open_movies method to create the webpage
+    with three of my favorit movies"""
+fresh_tomatoes.open_movies_page(movies)
